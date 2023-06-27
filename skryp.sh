@@ -15,4 +15,11 @@ if [[ "$1" == "--logs" ]]; then
     echo "Utworzono $licznik plików logx.txt"
     exit 0
 fi
+if [[ "$1" == "--help" ]]; then
+    echo "Dostępne opcje:"
+    echo "--logs - Tworzy 100 plików logx.txt"
+    echo "--logs [liczba] - Tworzy określoną liczbę plików logx.txt"
+    echo "--date - Wyświetla dzisiejszą datę."
+    exit 0
+fi
 echo "Dzisiejsza data: $(date)"
