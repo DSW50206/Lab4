@@ -43,9 +43,13 @@ fi
 
 if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     echo "Dostępne opcje:"
-    echo "--logs - Tworzy 100 plików logx.txt"
-    echo "--logs [liczba] - Tworzy określoną liczbę plików logx.txt"
-    echo "--date - Wyświetla dzisiejszą datę."
+    echo "--logs lub -l Tworzy 100 plików logx.txt"
+    echo "--logs [liczba] lub -l [liczba] - Tworzy określoną liczbę plików logx.txt"
+    echo "--date lub -d - Wyświetla dzisiejszą datę."
+    echo "--error lub -e - Tworzy 100 plików errorx.txt"
+    echo "--error [liczba] lub -e [liczba]- Tworzy określoną liczbę plików errorx.txt"
+    echo "--init - klonuję repozytoriumdo katalogu w którym jest uruchomiony i ustawia śceżkę w zmiennej środowiskowej PATH" 
+    echo "--help lub -h - Wyświetla wszystkie dostepne opcje"
     exit 0
 fi
 
