@@ -29,3 +29,9 @@ if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     exit 0
 fi
 
+if [[ "$1" == "--init" ]]; then
+    git clone <adres_repozytorium> .
+    export PATH=$PATH:$(pwd)
+    exit 0
+fi
+
