@@ -23,9 +23,10 @@ fi
 
 if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     echo "Dostępne opcje:"
-    echo "--logs - Tworzy 100 plików logx.txt"
-    echo "--logs [liczba] - Tworzy określoną liczbę plików logx.txt"
-    echo "--date - Wyświetla dzisiejszą datę."
+    echo "--logs lub -l - Tworzy 100 plików logx.txt"
+    echo "--logs [liczba] lub -l [liczba] - Tworzy określoną liczbę plików logx.txt"
+    echo "--date lub -d - Wyświetla dzisiejszą datę."
+    echo "--help lub -h - Wyświetla wszystkie dostepne opcje"
     exit 0
 fi
 
