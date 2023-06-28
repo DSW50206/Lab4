@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ "$1" == "--logs" ]]; then
+if [[ "$1" == "--logs" ]] || [[ "$1" == "-l" ]]; then
 	if [[ "$2" =~ ^[0-9]+$ ]]; then
         	licznik=$2
     	else
@@ -15,11 +15,17 @@ if [[ "$1" == "--logs" ]]; then
     echo "Utworzono $licznik plików logx.txt"
     exit 0
 fi
-if [[ "$1" == "--help" ]]; then
+
+if [[ "$1" == "--date" ]] || [[ "$1" == "-d" ]]; then
+    echo "Dzisiejsza data: $(date)"
+    exit 0
+fi
+
+if [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     echo "Dostępne opcje:"
     echo "--logs - Tworzy 100 plików logx.txt"
     echo "--logs [liczba] - Tworzy określoną liczbę plików logx.txt"
     echo "--date - Wyświetla dzisiejszą datę."
     exit 0
 fi
-echo "Dzisiejsza data: $(date)"
+
